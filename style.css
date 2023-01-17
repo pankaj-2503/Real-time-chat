@@ -1,0 +1,114 @@
+body{
+    background-image: linear-gradient(to right, rgb(117, 101, 101),rgb(65, 65, 90));
+}
+.container{
+    position: absolute;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;height: 90%;
+    
+}
+header{
+    width: 100%;height: 20%;
+    background-color: rgb(34, 31, 31);
+    display:flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+header div{
+    width: 90%; height: 50%;
+    margin:1%;
+    background: rgb(34, 31, 31);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header div label{color:white;
+background-color:rgb(34, 31, 31);}
+
+header div input{
+    width: 50%;height: 90%;
+    margin-left: 15px;
+}
+
+header div button{
+    width: max-content;
+    height: max-content;
+    gap: 10px ;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+main{
+    width: 100%;height: 70%;
+    background-color: white;
+    overflow-y:scroll;
+}
+main>div{
+    width: 100%;height: max-content;
+    padding: 5px;
+    display: flex;
+    
+}
+main>div>div{
+    width: 50%;height: 100px;
+    
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    
+}
+.my-msg{
+     justify-content: flex-start;
+}
+
+.friend-msg{
+    justify-content: flex-end;
+}
+.title{
+    width: 100%;height: 20%;    
+    display: flex;
+    border-bottom: 2px solid black;
+    
+}
+
+.content-msg{
+    width: 100%;height: 80%;
+    align-items: center;
+    
+    display: flex;
+    
+}
+.friend-msg .title{
+    justify-content: flex-end;
+}
+.friend-msg .content-msg{
+    justify-content: flex-end;
+}
+
+footer{
+    width: 100%;height: 10%;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+footer textarea{
+    width: 75%;height: 80%;
+    padding: 5px;
+    font: normal;
+    resize: none;
+}
+footer button{
+    width: max-content;height: 80%;
+    margin-left: 10px;
+    font: bold;
+    cursor: pointer;
+}
